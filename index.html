@@ -2,24 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Krishan Kripal</title>
-    <style>
-        .content {
-            position: absolute;
-            width: 100%;
-            top: 35%;
+    <link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACM/wgAM4lDABQ6aAAUOmgANItCAI//CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKX/BAAjYnYATszrAHf//wB8//8Acf//AHf//wBOy+oAJGJ0AKn/AwAAAAAAAAAAAAAAAAAAAAAAAAAAAHH/CgAtfbkAiv//AKj//wCn//8Ap///AGX//wCm//8AqP//AIr//wAxg7YAd/8JAAAAAAAAAAAAAAAAAKn/AAAuf6YAZ///AHn//wCm//8Apv//AKb//wCU//8Ad///AKf//wCn//8Alf//ABM4ogAAAAAAAAAAAAAAAAAqeEYAc///AKb//wCF//8AaP//AKX//wCl//8Apf//AGX//wCm//8Apv//AJb//wBHvP8ALnxCAAAAAAAAAAAANZSzAKb//wCl//8ApP//AJH//wBd+P8Aov//AKT//wB7//8AkP//AKb//wBx//8An///ADSNrwAAAAAAtv8GAFzo8wCp//8Apf//AKT//wCj//8AmP//AFnu/wCh//8Aov//AGn//wCl//8AZ///AKf//wBX5PEApv8EAI3/HQB5//8AwP//ALX//wCs//8Apf//AKP//wCa//8AWO3/AKH//wBp//8AmP//AHH//wCm//8AYv//AHf/GQCZ/x8AUpn/AIb//wCj//8AxP//ALv//wCx//8Aqf//AJr//wBU4/8Acf//AGH//wCk//8Ah///ADqe/wBy/xwA5f8JAI3u+ADy//8Awf//AI7//wCF//8Afv//AHf//wBw//8AZfj/AEzJ/wB6//8AXfj/AIL//wBY6vYAn/8HAAAAAAByq8AA////AP///wD4//8A7v//AOT//wDb//8A0f//AJ3//wBf0/8AT7//AK3//wCp//8APKW9AAAAAAAAAAAAT2RaAOf//wD///8A////AP///wD+//8A9P//AJz//wCp//8Ahf//AH///wDA//8Akv//AClnVgAAAAAAAAAAAP//AgBykcEA////AP///wD///8Axf//AKf//wDv//8A3P//ALj//wDn//8AhP3/AEeOvgDL/wEAAAAAAAAAAAAAAAAAqNEYAHSM1gDA9/8A1P//AP///wD///8A////ALf//wD///8A8f//AE6B0wB41xYAAAAAAAAAAAAAAAAAAAAAAAAAAADc/xAAanWfAMn5+wD///8A////AP///wCv8/8Aq/j7AFJznACv/w8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC+3iAAR0ZrAFVckQBSXJAAPUJqAKfhHwAAAAAAAAAAAAAAAAAAAAAAAAAA+B8AAOAHAADAAwAAgAMAAIABAACAAQAAAAAAAAAAAAAAAAAAAAAAAIABAACAAQAAgAEAAMADAADgBwAA+B8AAA=="
+        rel="icon" type="image/x-icon">
+    <style type="text/css">
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        ::-webkit-scrollbar-button {
+            display: none;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
             font-family: monospace;
-            font-size: 2rem;
+            font-size: 2em;
+            color: #f9e0ec;
+            margin: 0em;
+            padding: 0em;
+        }
+
+        h1,
+        h3 {
             text-align: center;
+            margin: 0em;
         }
     </style>
+
+    <script type="text/javascript">
+        const setbackground = () => {
+            window.setTimeout("setbackground()", 3000);
+            let index = Math.round(Math.random() * 9);
+            switch (index) {
+                case 1:
+                    document.bgColor = '#755a35';
+                    break;
+                case 2:
+                    document.bgColor = '#93a7a6';
+                    break;
+                case 3:
+                    document.bgColor = '#755a35';
+                    break;
+                case 4:
+                    document.bgColor = '#755a35';
+                    break;
+                case 5:
+                    document.bgColor = '#6b724e';
+                    break;
+                case 6:
+                    document.bgColor = '#5d61a2';
+                    break;
+                case 7:
+                    document.bgColor = '#272523';
+                    break;
+                case 8:
+                    document.bgColor = '#78383d';
+                    break;
+                case 9:
+                    document.bgColor = '#7a1b38';
+                    break;
+                default:
+                    document.bgColor = '#c82f63';
+            }
+        }
+    </script>
 </head>
 
-<body class="content">
+<body onLoad="setbackground()">
     <h1> Krishan Kripal</h1>
-    <h3>Software Developer</h3>
+    <h3>Software Engineer</h3>
 </body>
 
 </html>
