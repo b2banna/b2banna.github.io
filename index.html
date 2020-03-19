@@ -13,6 +13,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             font-family: monospace;
             font-size: 2em;
@@ -26,6 +27,49 @@
         h3 {
             text-align: center;
             margin: 0em;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #FF5722;
+
+            animation: bounce 0.5s;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes bounce {
+            from {
+                transform: translate3d(0, 0, 0);
+            }
+
+            to {
+                transform: translate3d(0, 200px, 0);
+            }
+        }
+
+        /* Prefix Support */
+        ball {
+            -webkit-animation-name: bounce;
+            -webkit-animation-duration: 0.5s;
+            -webkit-animation-direction: alternate;
+            -webkit-animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+            -webkit-animation-iteration-count: infinite;
+        }
+
+        @-webkit-keyframes bounce {
+            from {
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+            }
+
+            to {
+                -webkit-transform: translate3d(0, 200px, 0);
+                transform: translate3d(0, 200px, 0);
+            }
         }
     </style>
 
@@ -68,9 +112,10 @@
     </script>
 </head>
 
-<body onLoad="setbackground()">
+<body onload="setbackground()" bgcolor="#755a35">
     <h1> Krishan Kripal</h1>
     <h3>Software Engineer</h3>
+    <div />
 </body>
 
 </html>
