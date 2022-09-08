@@ -1,0 +1,59 @@
+* {
+    margin: 0em;
+    padding: 0em;
+    overflow: hidden;
+}
+
+html {
+    color: #414141;
+    background: #FBFBFD;
+    font-family: monospace;
+    font-size: 1.5rem;
+    height: 100%;
+}
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+}
+
+img {
+    width: 7rem;
+    border-radius: 50%;
+    transform: scaleX(-1);
+}
+
+h3 {
+    height: 45px;
+    animation: blink 1s step-end infinite;
+}
+
+a {
+    text-decoration: none;
+}
+
+path {
+    fill: #414141;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #414141;
+    }
+}
